@@ -9,6 +9,9 @@
         <li class="nav-item">
           <a href="/add" class="nav-link">Add</a>
         </li>
+         <li class="nav-item">
+          <a href="/published" class="nav-link">Published</a>
+        </li>
       </div>
     </nav>
 

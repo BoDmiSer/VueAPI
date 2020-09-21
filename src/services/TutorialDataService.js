@@ -21,5 +21,9 @@ class TutorialDataService{
     findByTitle(title){
         return http.get(`/tutorials?title=${title}`);
     }
+
+    getAllPublished(){
+        return http.get("tutorials/published");
+    }
 }
 export default new TutorialDataService();
