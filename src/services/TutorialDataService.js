@@ -1,7 +1,7 @@
 import http from "../http-common"
 class TutorialDataService{
-    getAll(){
-        return http.get("/tutorials");
+    getAll(params){
+        return http.get("/tutorials", { params });
     }
     get(id){
         return http.get(`/tutorials/${id}`);
@@ -22,8 +22,8 @@ class TutorialDataService{
         return http.get(`/tutorials?title=${title}`);
     }
 
-    getAllPublished(){
-        return http.get("tutorials/published");
+    getAllPublished(params){
+        return http.get("tutorials/published", { params });
     }
 }
 export default new TutorialDataService();
